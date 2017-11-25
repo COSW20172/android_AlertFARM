@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.a2096129.alertfarm">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Navigation_Drawer"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".Activity_Register">
+        </activity>
+        <activity
+            android:name=".Activity_Losspass">
+        </activity>
+        <activity
+            android:name=".Activity_Temperature">
+        </activity>
+        <activity
+            android:name=".Activity_Humidity">
+        </activity>
+        <activity
+            android:name=".Activity_News">
+        </activity>
+        <activity
+            android:name=".Activity_Promotions">
+        </activity>
+        <activity
+            android:name=".Activity_Purchases">
+        </activity>
+        <activity
+            android:name=".Activity_Knowus">
+        </activity>
+        <activity
+            android:name=".Activity_Bugs">
+        </activity>
+
+    </application>
+
+</manifest>

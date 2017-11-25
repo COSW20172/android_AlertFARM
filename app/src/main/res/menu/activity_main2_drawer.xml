@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/temp"
+            android:icon="@drawable/sotomelapela"
+            android:title="Temperatura" />
+        <item
+            android:id="@+id/hume"
+            android:icon="@drawable/humedad"
+            android:title="Humedad" />
+        <item
+            android:id="@+id/novedades"
+            android:icon="@drawable/nov"
+            android:title="Novedades" />
+        <item
+            android:id="@+id/promo"
+            android:icon="@drawable/pricetag"
+            android:title="Promociones" />
+        <item
+            android:id="@+id/compra"
+            android:icon="@drawable/carrito"
+            android:title="Compras" />
+    </group>
+
+    <item android:title="Contacto">
+        <menu>
+            <item
+                android:id="@+id/conocenos"
+                android:icon="@drawable/agent"
+                android:title="Conocenos" />
+            <item
+                android:id="@+id/bugs"
+                android:icon="@drawable/bugs"
+                android:title="Reportar bugs" />
+        </menu>
+    </item>
+
+</menu>
