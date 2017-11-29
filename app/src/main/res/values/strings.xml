@@ -6,4 +6,10 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <string name="table_no">No.</string>
+    <string name="table_date">Fecha</string>
+    <string name="table_valor">Valor</string>
+    <string name="table_idArduino">No. Arduino</string>
+    <string name="textview">TextView</string>
 </resources>

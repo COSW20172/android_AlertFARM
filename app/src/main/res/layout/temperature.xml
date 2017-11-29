@@ -3,12 +3,50 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ToggleButton
-        android:id="@+id/toggleButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <TableLayout
+        android:id="@+id/history_table_temperatures"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_weight="1"
-        android:text="ToggleButton"
-        android:textOff="temperatura"
-        android:textOn="temperature" />
+        android:orientation="vertical">
+
+        <TableRow
+            android:id="@+id/row_start_temperature"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="1dp">
+
+            <TextView
+                android:id="@+id/history_display_fecha_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.165"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="10dp"
+                android:text="@string/table_date" />
+
+            <TextView
+                android:id="@+id/history_display_valor_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.165"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="10dp"
+                android:text="@string/table_valor" />
+
+            <TextView
+                android:id="@+id/history_display_idArduino_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.165"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:text="@string/table_idArduino" />
+
+        </TableRow>
+
+    </TableLayout>
+
 </LinearLayout>
