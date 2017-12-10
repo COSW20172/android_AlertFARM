@@ -88,7 +88,6 @@ public class Navigation_Drawer
             case R.id.temp:
                 clazz = Activity_Temperature.class;
                 break;
-
             case R.id.hume:
                 clazz = Activity_Humidity.class;
                 break;
@@ -105,7 +104,6 @@ public class Navigation_Drawer
                 clazz = Activity_Knowus.class;
                 break;
             case R.id.bugs:
-
                 clazz = Activity_Bugs.class;
                 break;
         }

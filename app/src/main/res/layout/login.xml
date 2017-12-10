@@ -2,72 +2,72 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/refondo">
+    android:background="@drawable/refondo"
+    android:orientation="vertical">
 
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="59dp"
-        android:fontFamily="cursive"
-        android:gravity="center_horizontal"
-        android:text="AlertFarm"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="45sp"
-        android:textStyle="bold|italic"
-        android:typeface="sans" />
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_marginTop="59dp"
+      android:fontFamily="cursive"
+      android:gravity="center_horizontal"
+      android:text="AlertFarm"
+      android:textAlignment="center"
+      android:textColor="@android:color/black"
+      android:textSize="45sp"
+      android:textStyle="bold|italic"
+      android:typeface="sans" />
 
-    <EditText
-        android:id="@+id/user"
-        android:layout_width="210dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="49dp"
-        android:ems="10"
-        android:gravity="center_horizontal"
-        android:hint="Usuario"
-        android:inputType="textPersonName"
-        />
+  <EditText
+      android:id="@+id/user"
+      android:layout_width="210dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="49dp"
+      android:ems="10"
+      android:gravity="center_horizontal"
+      android:hint="Usuario"
+      android:inputType="textPersonName" />
 
-    <EditText
-        android:id="@+id/pass"
-        android:layout_marginTop="10dp"
-        android:layout_width="210dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center_horizontal"
-        android:ems="10"
-        android:hint="Clave"
-        android:inputType="textPassword"
-        />
+  <EditText
+      android:id="@+id/pass"
+      android:layout_width="210dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="10dp"
+      android:ems="10"
+      android:gravity="center_horizontal"
+      android:hint="Clave"
+      android:inputType="textPassword" />
 
-    <Button
-        android:id="@+id/login"
+  <Button
+      android:id="@+id/login"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="29dp"
+      android:text="Iniciar Sesion"
+      style="@style/button" />
 
-        android:layout_width="110dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="29dp"
-        android:layout_gravity="center_horizontal"
-        android:text="Iniciar Sesion" />
+  <Button
+      android:id="@+id/register"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_margin="10dp"
+      style="@style/button"
+      android:layout_marginTop="19dp"
+      android:text="¿No tienes cuenta?" />
 
-    <Button
-        android:id="@+id/register"
-        android:layout_marginTop="19dp"
-        android:layout_width="180dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center_horizontal"
-
-        android:text="¿No tienes cuenta?" />
-
-    <Button
-        android:id="@+id/olvcon"
-        android:layout_marginTop="19dp"
-        android:layout_width="220dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center_horizontal"
-        android:text="¿Olvidaste tu contraseña?"
-        />
+  <Button
+      android:id="@+id/olvcon"
+      style="@style/button"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_margin="10dp"
+      android:layout_marginTop="19dp"
+      android:text="¿Olvidaste tu contraseña?" />
 </LinearLayout>

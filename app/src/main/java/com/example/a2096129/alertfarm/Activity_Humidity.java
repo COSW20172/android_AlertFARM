@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -40,6 +41,9 @@ public class Activity_Humidity
     ProgressDialog progressDialog;
 
     private  SwipeRefreshLayout swipeRefreshLayout;
+    private RecyclerView mRecyclerView;
+    private RecyclerView.Adapter mAdapter;
+    private RecyclerView.LayoutManager mLayoutManager;
 
     public void showProgressDialog()
     {
@@ -54,7 +58,7 @@ public class Activity_Humidity
         progressDialog = new ProgressDialog( this );
         super.onCreate( savedInstanceState );
         setContentView( R.layout.humidity );
-        swipeRefreshLayout = (SwipeRefreshLayout) findViewById( R.id.swipe_refresh_layout );
+        //swipeRefreshLayout = (SwipeRefreshLayout) findViewById( R.id.swipe_refresh_layout );
         swipeRefreshLayout.setOnRefreshListener( this );
         getHumidiy();
     }
@@ -117,8 +121,7 @@ public class Activity_Humidity
     }
 
     //TODO change this to use an Adapter and RecyclerView
-    private void showTemperatures( List<Humidity> items )
-    {
+    private void showTemperatures( List<Humidity> items )    {
         TableLayout tableLayout = (TableLayout) findViewById( R.id.history_table_humidities );
         TableRow row;
         TextView tv_sync_date, tv_sync_value, tv_sync_idArduino;
